@@ -41,6 +41,8 @@
     transition: color 200ms;
 }
 
+
+
 /* margin é o espaço entre "componentes" 
 e o padding é o espaço entre o conteúdo e a borda */
 #wrapper {
@@ -127,11 +129,16 @@ e o padding é o espaço entre o conteúdo e a borda */
     margin-top: 5px;
 }
 
-.footer{
+.rodape{
     background-color: #EEEEEE;
     height: 60px;
-    width: 100%;
-    margin-top: 50px;
+    color: #696464
+}
+.rodape h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;   
+    text-align: center;
+    padding-top: 20px;
 }
 
 /*____________MODAL___________*/
@@ -163,7 +170,7 @@ e o padding é o espaço entre o conteúdo e a borda */
     top: 8px; */
     /*faz virar mão quando passa em cima*/
     /* cursor: pointer; */
-}
+/* } */
 
 /*____________MODAL.active___________*/
 
