@@ -1,0 +1,40 @@
+@import "@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap')";
+@import "url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap')";
+
+.cards {    
+    max-width: 66%;
+    margin: 0 auto;
+    display: grid;
+    /*cria colunas cada fr é uma coluna*/
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    margin: 0px 0px 0px 230px;
+    
+}
+
+.card {
+   color:black;
+   border: orangered;
+}
+
+.card_image-container img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.card_info {
+    font-family:'Roboto', sans-serif;
+    display: grid; 
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.card_content{
+    size: 18px;
+}
+
+.card__price {    
+    size:14px;
+    color: #777777;
+    margin-top: 5px;
+}
