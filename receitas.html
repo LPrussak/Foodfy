@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" type="text">
 
     <title>Enconte sua receita | Foodfy</title>
@@ -18,21 +18,17 @@
 </head>
 
 <body>
-    <!-- BARRA DE NAVEGAÇÃO -->
-    <header>
-        <div>
-            <div class="home">
-                <a href="/home.html">
-                    <img src="imagens/logo.png" alt="logo"></a>
-            </div>
-            <nav id="menu">
-                <ul>
-                    <li><a href="/sobre.html">Sobre</a></li>
-                    <li><a href="/receitas.html">Receitas</a></li>
-                </ul>
-            </nav>
+    <div class="wrapper">
+      <!-- BARRA DE NAVEGAÇÃO -->
+      <header>
+        <div class="home">
+          <a href="/home.html"> <img src="imagens/logo.png" alt="logo"/></a>
         </div>
-    </header>
+        <nav id="menu">
+          <a href="/sobre.html">Sobre</a>
+          <a href="/receitas.html">Receitas</a>
+        </nav>
+      </header>
     <!-- END BARRA DE NAVEGAÇÃO -->
 
     <!-- SEÇÃO CARD -->
@@ -40,7 +36,7 @@
         <section class="cards">
 
             <!-- CARD 1 -->
-            <div class="card" id="Burger">
+            <div class="card" id="burger.png">
                 <div class="card_image-container">
                     <img src="imagens/burger.png" alt="Triplo Bacon Burger">
                 </div>
@@ -55,7 +51,7 @@
             <!-- END CARD 1 -->
 
             <!-- CARD 2 -->
-            <div class="card" id="pizza">
+            <div class="card" id="pizza.png">
                 <div class="card_image-container">
                     <img src="imagens/pizza.png" alt="Pizza 4 estações">
                 </div>
@@ -70,7 +66,7 @@
             <!-- END CARD 2 -->
 
             <!-- CARD 3 -->
-            <div class="card" id="espaguete">
+            <div class="card" id="espaguete.png">
                 <div class="card_image-container">
                     <img src="imagens/espaguete.png" alt="Espaguete ao alho">
                 </div>
@@ -85,7 +81,7 @@
             <!-- END CARD 3 -->
 
             <!-- CARD 4 -->
-            <div class="card" id="Lasanha">
+            <div class="card" id="lasanha.png">
                 <div class="card_image-container">
                     <img src="imagens/lasanha.png" alt="Lasanha mac cheese">
                 </div>
@@ -100,7 +96,7 @@
             <!-- END CARD 4 -->
 
             <!-- CARD 5 -->
-            <div class="card" id="docinhos">
+            <div class="card" id="doce.png">
                 <div class="card_image-container">
                     <img src="imagens/doce.png" alt="Docinhos pão do céu">
                 </div>
@@ -115,14 +111,14 @@
             <!-- END CARD 5 -->
 
             <!-- CARD 6 -->
-            <div class="card" id="assinhas">
+            <div class="card" id="asinhas">
                 <div class="card_image-container">
-                    <img src="imagens/asinhas.png" alt="Assinhas de frango ao barbecue">
+                    <img src="imagens/asinhas.png" alt="Asinhas de frango ao barbecue">
                 </div>
 
                 <div class="card_info">
                     <div class="card_content">
-                        <p>Assinhas de frango ao barbecue</p>
+                        <p>Asinhas de frango ao barbecue</p>
                     </div>
                     <p class="card__price">Juliano Silva</p>
                 </div>
@@ -130,7 +126,7 @@
             <!-- END CARD 6 -->
 
             <!-- CARD 7 -->
-            <div class="card" id="Burger">
+            <div class="card" id="burger">
                 <div class="card_image-container">
                     <img src="imagens/burger.png" alt="Triplo Bacon Burger">
                 </div>
@@ -175,7 +171,7 @@
             <!-- END CARD 9 -->
 
             <!-- CARD 10 -->
-            <div class="card" id="Lasanha">
+            <div class="card" id="lasanha">
                 <div class="card_image-container">
                     <img src="imagens/lasanha.png" alt="Lasanha mac cheese">
                 </div>
@@ -190,7 +186,7 @@
             <!-- END CARD 10 -->
 
             <!-- CARD 11 -->
-            <div class="card" id="docinhos">
+            <div class="card" id="doce">
                 <div class="card_image-container">
                     <img src="imagens/doce.png" alt="Docinhos pão do céu">
                 </div>
@@ -205,14 +201,14 @@
             <!-- END CARD 11 -->
 
             <!-- CARD 12 -->
-            <div class="card" id="assinhas">
+            <div class="card" id="asinhas">
                 <div class="card_image-container">
-                    <img src="imagens/asinhas.png" alt="Assinhas de frango ao barbecue">
+                    <img src="imagens/asinhas.png" alt="Asinhas de frango ao barbecue">
                 </div>
 
                 <div class="card_info">
                     <div class="card_content">
-                        <p>Assinhas de frango ao barbecue</p>
+                        <p>Asinhas de frango ao barbecue</p>
                     </div>
                     <p class="card__price">Juliano Silva</p>
                 </div>
@@ -220,8 +216,25 @@
             <!-- END CARD 12 -->
         </section>
     </div> <!-- END SEÇÃO CARDS -->
+    </div> <!-- END WRAPPER -->
+
+    <!-- MODAL -->
+      <div class="modal-overlay active">
+            <div class="modal">
+                <div class="modal-content">
+                    <img src="imagens/asinhas.png" alt="Imagens">
+                        <div class="card_content">
+                            <h4>Asinhas de frango ao barbecue</h4>
+                            <p>Juliano Silva</p>                    
+                        </div>
+                </div>
+                <a href="#">Fechar modal</a>
+            </div>
+        </div>
+        <!-- END MODAL -->
     <footer class="rodape">
         <h3>Todos os Direitos reservados: Receitas Foodfy</h3>
     </footer>
+    <!-- <script src="receitas.js"></script> -->
 </body>
 </html>

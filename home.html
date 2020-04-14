@@ -1,159 +1,169 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" type="text">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <a
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+      type="text"
+    ></a>
+    <a
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+      type="text"
+    ></a>
 
     <title>Enconte sua receita | Foodfy</title>
 
     <!-- STYLES -->
-    <link rel="stylesheet" href="css/home.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="css/theme.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/home.css" type="text/css" />
+    <link rel="stylesheet" href="css/theme.css" type="text/css" />
 
     <!--END  STYLES -->
+  </head>
 
-</head>
-
-<body>
-    <!-- BARRA DE NAVEGAÇÃO -->
-    <header>
-        <div>
-            <div class="home">
-                    <a href="/home.html">
-                     <img src="imagens/logo.png" alt="logo"></a>
-            </div>
-            <nav id="menu">
-                <ul>
-                    <li><a href="/sobre.html">Sobre</a></li>
-                    <li><a href="/receitas.html">Receitas</a></li>
-                </ul>
-            </nav>
+  <body>
+    <div class="wrapper">
+      <!-- BARRA DE NAVEGAÇÃO -->
+      <header>
+        <div class="home">
+          <a href="/home.html"> <img src="imagens/logo.png" alt="logo"/></a>
         </div>
-    </header>
-    <!-- END BARRA DE NAVEGAÇÃO -->
+        <nav id="menu">
+          <a href="/sobre.html">Sobre</a>
+          <a href="/receitas.html">Receitas</a>
+        </nav>
+      </header>
+      <!-- END BARRA DE NAVEGAÇÃO -->
 
-    <!-- SEÇÃO 1 -->
-    <div id="wrapper">
-        <h1>As melhores receitas</h1>
-        <h3>Aprenda a construir os melhores pratos<p> com receitas criadas por profissionais</p> do mundo inteiro
-        </h3>
-        <img src="imagens/chef.png" alt="chef">
-    </div>
-    <!--END SEÇÃO 1 -->
+      <!-- SEÇÃO 1 -->
+      <section class="hero">
+        <div class="intro">
+          <h1>As melhores receitas</h1>
+          <p>
+            Aprenda a construir os melhores pratos com receitas criadas por
+            profissionais do mundo inteiro
+          </p>
+        </div>
+        <img src="imagens/chef.png" alt="chef" />
+      </section>
+      <!--END SEÇÃO 1 -->
 
-    <!-- SEÇÃO 2 -->
-    <div>
-        <h1 class="title">Mais acessadas</h1>
-    </div>
-    <!--END SEÇÃO 2 -->
+      <main>
+        <!-- SEÇÃO 2 -->
+        <div>
+          <h2>Mais acessadas</h2>
+        </div>
+        <!--END SEÇÃO 2 -->
 
-    <!-- SEÇÃO 3 -->
-    <div>
-        <section class="cards">
-
+        <!-- SEÇÃO 3 -->
+        <div>
+          <section class="cards">
             <!-- CARD 1 -->
-            <div class="card" id="Burger">
-                <div class="card_image-container">
-                    <img src="imagens/burger.png" alt="Triplo Bacon Burger">
-                </div>
+            <div class="card" id="burger">
+              <div class="card_image-container">
+                <img src="imagens/burger.png" alt="Triplo Bacon Burger" />
+              </div>
 
-                <div class="card_info">
-                    <div class="card_content">
-                        <p>Triplo Bacon Burger</p>
-                    </div>
-                    <p class="card__price">Por Jorge Relato</p>
+              <div class="card_info">
+                <div class="card_content">
+                  <p>Triplo Bacon Burger</p>
                 </div>
+                <p class="card__price">Por Jorge Relato</p>
+              </div>
             </div>
             <!-- END CARD 1 -->
 
             <!-- CARD 2 -->
             <div class="card" id="pizza">
-                <div class="card_image-container">
-                    <img src="imagens/pizza.png" alt="Pizza 4 estações">
-                </div>
+              <div class="card_image-container">
+                <img src="imagens/pizza.png" alt="Pizza 4 estações" />
+              </div>
 
-                <div class="card_info">
-                    <div class="card_content">
-                        <p>Pizza 4 estações</p>
-                    </div>
-                    <p class="card__price">Fabiana Melo</p>
+              <div class="card_info">
+                <div class="card_content">
+                  <p>Pizza 4 estações</p>
                 </div>
+                <p class="card__price">Fabiana Melo</p>
+              </div>
             </div>
             <!-- END CARD 2 -->
 
             <!-- CARD 3 -->
             <div class="card" id="espaguete">
-                <div class="card_image-container">
-                    <img src="imagens/espaguete.png" alt="Espaguete ao alho">
-                </div>
+              <div class="card_image-container">
+                <img src="imagens/espaguete.png" alt="Espaguete ao alho" />
+              </div>
 
-                <div class="card_info">
-                    <div class="card_content">
-                        <p>Espaguete ao alho</p>
-                    </div>
-                    <p class="card__price">Juliana Silva</p>
+              <div class="card_info">
+                <div class="card_content">
+                  <p>Espaguete ao alho</p>
                 </div>
+                <p class="card__price">Juliana Silva</p>
+              </div>
             </div>
             <!-- END CARD 3 -->
 
             <!-- CARD 4 -->
-            <div class="card" id="Lasanha">
-                <div class="card_image-container">
-                    <img src="imagens/lasanha.png" alt="Lasanha mac cheese">
-                </div>
+            <div class="card" id="lasanha">
+              <div class="card_image-container">
+                <img src="imagens/lasanha.png" alt="Lasanha mac cheese" />
+              </div>
 
-                <div class="card_info">
-                    <div class="card_content">
-                        <p>Lasanha mac cheese</p>
-                    </div>
-                    <p class="card__price">Julia Souza</p>
+              <div class="card_info">
+                <div class="card_content">
+                  <p>Lasanha mac cheese</p>
                 </div>
+                <p class="card__price">Julia Souza</p>
+              </div>
             </div>
             <!-- END CARD 4 -->
 
             <!-- CARD 5 -->
-            <div class="card" id="docinhos">
-                <div class="card_image-container">
-                    <img src="imagens/doce.png" alt="Docinhos pão do céu">
-                </div>
+            <div class="card" id="doce">
+              <div class="card_image-container">
+                <img src="imagens/doce.png" alt="Docinhos pão do céu" />
+              </div>
 
-                <div class="card_info">
-                    <div class="card_content">
-                        <p>Docinhos pão do céu</p>
-                    </div>
-                    <p class="card__price">João dos Santos</p>
+              <div class="card_info">
+                <div class="card_content">
+                  <p>Docinhos pão do céu</p>
                 </div>
+                <p class="card__price">João dos Santos</p>
+              </div>
             </div>
             <!-- END CARD 5 -->
 
             <!-- CARD 6 -->
-            <div class="card" id="assinhas">
-                <div class="card_image-container">
-                    <img src="imagens/asinhas.png" alt="Assinhas de frango ao barbecue">
-                </div>
+            <div class="card" id="asinhas">
+              <div class="card_image-container">
+                <img
+                  src="imagens/asinhas.png"
+                  alt="Asinhas de frango ao barbecue"
+                />
+              </div>
 
-                <div class="card_info">
-                    <div class="card_content">
-                        <p>Assinhas de frango ao barbecue</p>
-                    </div>
-                    <p class="card__price">Juliano Silva</p>
+              <div class="card_info">
+                <div class="card_content">
+                  <p>Assinhas de frango ao barbecue</p>
                 </div>
+                <p class="card__price">Juliano Silva</p>
+              </div>
             </div>
             <!-- END CARD 6 -->
-        </section>
-
-    </div> <!-- END SEÇÃO 3 -->
-    
+          </section>
+        </div>
+      </main>
+      <!-- END SEÇÃO 3 -->
+    </div>
+    <!-- END WRAPPER -->
     <footer class="rodape">
-        <h3>Todos os Direitos reservados: Receitas Foodfy</h3>
+      <h3>Todos os Direitos reservados: Receitas Foodfy</h3>
     </footer>
 
     <!-- SCRIPTS -->
     <script type="text/javascript" src="js/home.js"></script>
     <!-- END SCRIPTS -->
-    
-</body>
+  </body>
 </html>
