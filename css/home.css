@@ -81,13 +81,14 @@ h2 {
 }
 
 .card_info {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
   display: grid;
   margin-bottom: 30px;
   margin-top: 20px;
 }
 
-.card_content {
+.card_content h4 {
+  font-weight: 100;
   size: 18px;
 }
 
@@ -95,4 +96,73 @@ h2 {
   size: 14px;
   color: #777777;
   margin-top: 5px;
+}
+
+/*____________MODAL___________*/
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: white;
+  width: 90%;
+  max-width: 660px;
+  height: 413px;
+  box-sizing: border-box;
+  margin: 25vh auto;
+  padding: 30px;
+  position: relative;
+  border-radius: 16px;
+}
+
+.modal-content img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+
+.modal-content h3 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 28px;
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  color: #111111;
+}
+
+.modal-content p {
+  margin-top: 5px;
+  line-height: 21px;
+  font-size: 18px;
+  font-family: "Roboto-Regular", sans-serif;
+  text-align: center;
+  color: #777777;
+}
+
+.modal a {
+  color: #999999;
+  font-size: 16px;
+  font-family: "Roboto-Regular ", sans-serif;
+  margin-top: 60px;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  display: block;
+}
+
+/*____________ACTIVE MODAL___________*/
+
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
 }

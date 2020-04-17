@@ -21,13 +21,15 @@
 }
 
 .card_info {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto-Regular", sans-serif;
+  font-weight: normal;
   display: grid;
   margin-bottom: 30px;
   margin-top: 20px;
 }
 
-.card_content {
+.card_content h4 {
+  font-weight: 100;
   size: 18px;
 }
 
@@ -59,7 +61,6 @@
   padding: 30px;
   position: relative;
   border-radius: 16px;
-
 }
 
 .modal-content img {
@@ -67,21 +68,20 @@
   height: 200px;
   object-fit: cover;
   border-radius: 15px;
-
   margin-bottom: 20px;
 }
 
-.card_content h4 {
+.modal-content h3 {
   margin: 0;
   font-size: 24px;
   line-height: 28px;
   font-family: "Roboto-Regular", sans-serif;
+  font-weight: 100;
   text-align: center;
   color: #111111;
-
 }
 
-.modal-content .card_content p {
+.modal-content p {
   margin-top: 5px;
   line-height: 21px;
   font-size: 18px;
